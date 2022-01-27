@@ -1,20 +1,9 @@
-const removeFromArray = function(array,...args) {
-    console.log(array)
+const removeFromArray = function(arr,...args) {
+  let a = arr;
+  let b = args;
+  let c = a.filter(d => !b.includes(d));
+  return c
     
-    console.log(args)
-      let myNewArray = array.filter((item) => {
-        for(const arg of args) {
-          if(item !== arg) {
-              if(typeof item == typeof arg) {
-                return item
-              }
-          
-          }
-        }
-      })
-    
-      return myNewArray
-  
   };
 
 // Do not edit below this line
